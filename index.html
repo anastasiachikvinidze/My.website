@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FINAL PROJECT</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900&display=swap" rel="stylesheet">
+
+    
+
+</head>
+<body> 
+    <!-- first page -->
+    
+    <header>
+        <nav>
+            <div class="menu">Menu</div>
+            <div class="logo">   B.S.</div>
+            <div class="nav-options">
+                <span>Cart (0)</span>
+                <span>Log In</span>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>BALI SOAP</h1>
+                <p>Home Essentials for Sustainable Living</p>
+                <button>Shop Now</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- second page -->
+    <section class="new-arrivals">
+        <h2>New In</h2>
+        <div class="carousel-container">
+            <button class="prev"><i class="fas fa-chevron-left"></i></button>
+            <div class="carousel">
+                <div class="item"><img src="https://i.pinimg.com/736x/5c/27/c8/5c27c8d257b43f04ce096585c433364d.jpg" alt="Eco Glass"><p>Eco Glass<br>$5.50</p></div>
+                <div class="item"><img src="https://i.pinimg.com/736x/ba/27/8b/ba278bc27cae36ca8b1a493b12d2c9a6.jpg" alt="Seaweed Natural Soap"><p>Seaweed Natural Soap<br>$6.50</p></div>
+                <div class="item"><img src="https://i.pinimg.com/736x/a2/70/01/a27001ffb93ec505fefe3cd7c669a92f.jpg" alt="Stainless Steel Bottle"><p>Stainless Steel Bottle<br>$25.00</p></div>
+                <div class="item"><img src="https://i.pinimg.com/736x/d6/df/65/d6df659b1652a0e50abefeeb1b41c2c8.jpg" alt="Compostable Kitchen Sponges"><p>Compostable Kitchen Sponges<br>$7.00</p></div>
+                <div class="item"><img src="https://i.pinimg.com/736x/4e/3a/65/4e3a651c441ae4f614657b24449af6a7.jpg" alt="New Item"><p>Wood Brush<br>$10.00</p></div>
+                <div class="item"><img src="https://i.pinimg.com/736x/db/48/97/db489709416f36e3cda343e857cf68b4.jpg" alt="New Item"><p>Cotton Towel<br>$12.00</p></div>
+                <div class="item"><img src="https://i.pinimg.com/736x/b7/66/d7/b766d7c650fe55b2633e571b64ef7040.jpg" alt="New Item"><p>Miracle balm<br>$8.00</p></div>
+                <div class="item"><img src="https://i.pinimg.com/736x/3d/ca/4c/3dca4cf4634986dac7bdcb641443a804.jpg" alt="New Item"><p>Le Gua Sha<br>$5.00</p></div>
+                <div class="item"><img src="https://i.pinimg.com/736x/dd/ec/2a/ddec2a87a34ee585e0999a1a70b109a6.jpg" alt="New Item"><p>Hairbrush<br>$15.00</p></div>
+            </div>
+            <button class="next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+    
+    <script>
+        const carousel = document.querySelector('.carousel');
+        const prev = document.querySelector('.prev');
+        const next = document.querySelector('.next');
+
+        next.addEventListener('click', () => {
+            carousel.scrollBy({ left: 300, behavior: 'smooth' });
+        });
+
+        prev.addEventListener('click', () => {
+            carousel.scrollBy({ left: -300, behavior: 'smooth' });
+        });
+    </script>
+
+    <!-- third page -->
+    <section class="hero-container">
+        <div class="hero-text1">
+            <h1>Zero Waste Bath Products</h1>
+            <h2>Where quality meets eco-friendly</h2>
+            <p>
+                Bali Soap is a handcrafted, natural soap brand from Indonesia, known for using high-quality plant-based ingredients such as coconut oil, essential oils, and botanical extracts. Established in 2005, the company emphasizes eco-friendly production, vibrant designs, and rich tropical scents inspired by Bali’s lush environment.
+            </p>
+            <button>Shop Now</button>
+        </div>
+        <div class="hero-image">
+            <img src="https://i.pinimg.com/736x/ea/92/f3/ea92f38ad6df12366473712c182913a8.jpg" alt="Zero Waste Bath Products">
+        </div>
+    </section>
+
+    <!-- fourth page -->
+    <section class="shop-collections">
+        <h2>Shop Collections</h2>
+        <div class="collections-container">
+            <a href="kitchen.html" class="collection-item">
+                <img src="https://i.pinimg.com/736x/fc/6f/f4/fc6ff49ba81bf0b75f9caaabafbcdd97.jpg" alt="Kitchen Collection">
+                <div class="collection-overlay">
+                    <h2>Kitchen</h2>
+                    <p>Shop Collection</p>
+                </div>
+            </a>
+            <a href="bath.html" class="collection-item">
+                <img src="https://i.pinimg.com/736x/5b/f7/fe/5bf7fe516b7d6e27bf0e5fdc20973878.jpg" alt="Bath Collection">
+                <div class="collection-overlay">
+                    <h2>Bath</h2>
+                    <p>Shop Collection</p>
+                </div>
+            </a>
+            <a href="on-the-go.html" class="collection-item">
+                <img src="https://i.pinimg.com/736x/13/45/6b/13456b71bb31f1e002605f3a06418cf8.jpg" alt="On the Go Collection">
+                <div class="collection-overlay">
+                    <h2>On the Go</h2>
+                    <p>Shop Collection</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- fifth page -->
+    <section class="mission-section">
+        <h2 class="mission-title">The BALI SOAP Mission</h2>
+        <p class="mission-text">
+            We believe in ethical and smart shopping. All of our products are carefully selected to ensure they align with our core values.
+        </p>
+        
+        <div class="mission-icons">
+            <div class="icon-box">
+                <div class="icon-placeholder"><i class="fas fa-recycle"></i></div>
+                <p>Zero Waste</p>
+            </div>
+            <div class="icon-box">
+                <div class="icon-placeholder"><i class="fas fa-seedling"></i></div>
+                <p>Vegan</p>
+            </div>
+            <div class="icon-box">
+                <div class="icon-placeholder"><i class="fas fa-box-open"></i> </div>
+                <p>Recycled</p>
+            </div>
+            <div class="icon-box">
+                <div class="icon-placeholder"><i class="fab fa-envira"></i></div>
+                <p>Fair Trade</p>
+            </div>
+        </div>
+    
+        <p class="mission-description">
+            Bali Soap's mission is to create high-quality, natural skincare products inspired by Balis rich botanical heritage. The company is dedicated to sustainability, using eco-friendly ingredients and traditional cold-process methods to craft handmade soaps. Their goal is to provide nourishing, chemical-free skincare while celebrating the islands natural and cultural essence.
+        </p>
+    </section>
+
+    <!-- sixth page -->
+    <section class="sale-banner">
+        <div class="sale-image-container">
+            <img src="image123.jpg" alt="Weekend Sale Background" class="sale-image">
+            <div class="sale-content">
+                <p class="sale-subtitle">Happening Now!</p>
+                <h1 class="sale-title">Weekend Sale</h1>
+                <a href="sale.html" class="shop-button">Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- seventh page -->
+    <section class="eco-footer-container">
+        <!-- Eco-Conscious Section -->
+        <div class="eco-conscious">
+            <h1>Stay inspired and eco-conscious</h1>
+            <br><br><br><p>Receive the latest trends and tips on eco-friendly design, sustainable living, zero waste, and eco-conscious practices.</p>
+    
+            <form class="newsletter-form">
+                <label for="email">Email </label>
+                <input type="email" id="email" name="email" required>
+                <div class="subscribe">
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe">Yes, subscribe me to your newsletter.</label>
+                </div>
+                <button type="submit">SUBMIT</button>
+            </form>
+        </div>
+    
+        <!-- Footer Section -->
+        <div class="footer">
+            <div class="footer-links">
+                <div class="footer-column">
+                    <a href="#">Home</a>
+                    <a href="#">Shop All</a>
+                    <a href="#">Our Mission</a>
+                    <a href="#">Contact</a>
+                    <a href="#">FAQ</a>
+                </div>
+                <div class="footer-column">
+                    <a href="#">Kitchen</a>
+                    <a href="#">Bath</a>
+                    <a href="#">On the Go</a>
+                    <a href="sale.html">Sale</a>
+                </div>
+                <div class="footer-column">
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Shipping Policy</a>
+                    <a href="#">Refund Policy</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
